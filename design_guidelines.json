@@ -1,0 +1,169 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "The Anti-AI Designer",
+    "philosophy": "Fusion over Imitation. Emotion First. Break the Grid.",
+    "tone": "Premium, Liquid, Playful yet Professional"
+  },
+  "design_system": {
+    "theme": {
+      "default": "dark",
+      "strategy": "Dark-first with 'Liquid Glass' overlays. No flat colors; everything has depth via texture or blur."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "code": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "600 (SemiBold) or 800 (ExtraBold)",
+        "body": "400 (Regular) or 500 (Medium)"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl tracking-tight",
+        "h2": "text-3xl tracking-tight",
+        "h3": "text-2xl tracking-normal",
+        "body": "text-base leading-relaxed",
+        "small": "text-sm text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "base": "#09090b",
+          "layer_1": "#18181b",
+          "layer_2": "#27272a"
+        },
+        "glass": {
+          "panel": "rgba(255, 255, 255, 0.03)",
+          "panel_hover": "rgba(255, 255, 255, 0.06)",
+          "border": "rgba(255, 255, 255, 0.08)",
+          "border_highlight": "rgba(255, 255, 255, 0.15)"
+        },
+        "brand": {
+          "primary": "#FFD60A",
+          "primary_foreground": "#000000",
+          "secondary": "#22C55E",
+          "accent": "#3B82F6"
+        },
+        "text": {
+          "primary": "#FAFAFA",
+          "secondary": "#A1A1AA",
+          "muted": "#52525B"
+        }
+      },
+      "gradients": {
+        "glass_surface": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)",
+        "glow_yellow": "radial-gradient(circle at center, rgba(255, 214, 10, 0.15) 0%, transparent 70%)"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "element_gap": "gap-4 md:gap-6",
+      "radius": {
+        "sm": "rounded-md",
+        "md": "rounded-xl",
+        "lg": "rounded-2xl",
+        "full": "rounded-full"
+      }
+    },
+    "effects": {
+      "glassmorphism": {
+        "default": "backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl",
+        "heavy": "backdrop-blur-2xl bg-black/40 border border-white/5",
+        "subtle": "backdrop-blur-md bg-white/5 border border-white/5"
+      },
+      "shadows": {
+        "glow": "0 0 20px -5px rgba(255, 214, 10, 0.3)",
+        "depth": "0 10px 30px -10px rgba(0, 0, 0, 0.5)"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FFD60A] text-black hover:bg-[#FFD60A]/90 font-bold rounded-full px-6 py-2 shadow-[0_0_15px_rgba(255,214,10,0.3)] transition-all hover:scale-105 active:scale-95",
+      "secondary": "bg-white/10 text-white hover:bg-white/20 border border-white/10 rounded-full px-6 py-2 backdrop-blur-md transition-all",
+      "ghost": "text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg px-4 py-2 transition-colors"
+    },
+    "inputs": {
+      "chat": "bg-black/20 border border-white/10 focus:border-[#FFD60A]/50 text-white placeholder:text-zinc-500 rounded-2xl px-6 py-4 backdrop-blur-md shadow-inner w-full transition-all outline-none ring-0 focus:ring-2 focus:ring-[#FFD60A]/20"
+    },
+    "cards": {
+      "project": "group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:-translate-y-1"
+    },
+    "sidebar": {
+      "container": "fixed left-0 top-0 h-full w-64 border-r border-white/5 bg-black/40 backdrop-blur-xl z-50 flex flex-col p-4"
+    }
+  },
+  "layout_strategies": {
+    "landing": {
+      "name": "The Scattered Grid",
+      "description": "A chaotic but balanced grid of floating project thumbnails in the background, with the main chat interface centered and focused.",
+      "structure": "relative w-full h-screen overflow-hidden bg-[#09090b]"
+    },
+    "dashboard": {
+      "name": "The Control Room",
+      "description": "Sidebar navigation + Main Content Area. Main area uses a bento-grid layout for widgets.",
+      "structure": "flex h-screen w-full overflow-hidden"
+    }
+  },
+  "assets": {
+    "images": {
+      "background_grid": [
+        {
+          "url": "https://images.unsplash.com/photo-1605245763221-e89db37d59f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxyb2Jsb3glMjBnYW1lJTIwZGV2ZWxvcG1lbnQlMjBhYnN0cmFjdHxlbnwwfHx8Ymx1ZXwxNzY2NDI3MzAxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Abstract Blue House",
+          "category": "background_thumbnail"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1664070719324-c0a6a02ce364?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxyb2Jsb3glMjBnYW1lJTIwZGV2ZWxvcG1lbnQlMjBhYnN0cmFjdHxlbnwwfHx8Ymx1ZXwxNzY2NDI3MzAxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Computer Screen Code",
+          "category": "background_thumbnail"
+        },
+        {
+          "url": "https://images.pexels.com/photos/8679906/pexels-photo-8679906.jpeg",
+          "alt": "Low Poly Landscape",
+          "category": "background_thumbnail"
+        },
+        {
+          "url": "https://images.pexels.com/photos/8858693/pexels-photo-8858693.jpeg",
+          "alt": "Abstract 3D Shapes",
+          "category": "background_thumbnail"
+        }
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": "You are building a 'Lemonade-style' Roblox AI platform. It must feel premium, fluid, and slightly playful. Do not build a boring admin dashboard. Use the 'Scattered Grid' layout for the home page.",
+    "critical_rules": [
+      "NEVER use pure black (#000000) for backgrounds. Use #09090b.",
+      "ALWAYS use backdrop-blur-xl for glass panels.",
+      "Buttons must have a subtle inner glow or shadow.",
+      "The 'New Project' button in the sidebar is the primary CTA.",
+      "Use the provided image URLs for the background project thumbnails.",
+      "Ensure all interactive elements have data-testid attributes."
+    ],
+    "step_by_step_implementation": [
+      "1. Setup Tailwind config with the new colors and fonts.",
+      "2. Create the 'GlassCard' and 'LiquidButton' base components.",
+      "3. Build the Sidebar with the 'Lemonade' logo and navigation.",
+      "4. Build the Home Page with the 'Scattered Grid' background and centered Chat Input.",
+      "5. Implement the 'Create Project' modal.",
+      "6. Add the User Dropdown and Theme Selector."
+    ]
+  },
+  "universal_guidelines": {
+    "anti_slop": [
+      "Avoid generic centered layouts.",
+      "Use 2-3x more spacing than usual.",
+      "Add micro-interactions to everything (hover, focus, active).",
+      "No default scrollbars - customize them to be thin and dark."
+    ],
+    "accessibility": [
+      "Ensure text contrast meets APCA standards.",
+      "Respect prefers-reduced-motion.",
+      "Use semantic HTML."
+    ]
+  }
+}
