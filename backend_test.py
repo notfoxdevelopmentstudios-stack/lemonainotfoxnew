@@ -95,7 +95,7 @@ class NotFoxAPITester:
         
         # Generate unique test user
         timestamp = int(time.time())
-        test_email = f"test_user_{timestamp}@notfox.test"
+        test_email = f"test_user_{timestamp}@example.com"
         test_username = f"testuser_{timestamp}"
         test_password = "TestPass123!"
 
